@@ -28,16 +28,16 @@ public class TkApplication extends Application {
 
         appContext = this;
 
-        if (LeakCanary.isInAnalyzerProcess(this)) {
-            return;
-        }
-        enabledStrictMode();
-        LeakCanary.install(this);
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            return;
+//        }
+//        enabledStrictMode();
+//        LeakCanary.install(this);
 
-        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyDeath().build());
-        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectAll().penaltyDeath().build());
+//        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyDeath().build());
+//        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectAll().penaltyDeath().build());
 
-        BlockCanary.install(this,new AppBlockCanaryContext()).start();
+//        BlockCanary.install(this,new AppBlockCanaryContext()).start();
 
 //        TwinklingRefreshLayout.setDefaultHeader(SinaRefreshView.class.getName());
 //        TwinklingRefreshLayout.setDefaultFooter(BallPulseView.class.getName());

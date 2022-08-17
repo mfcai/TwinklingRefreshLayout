@@ -48,12 +48,12 @@ public class MusicActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         adapter.refreshCard();
 
-        exHeader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ToastUtil.show("fixed header clicked!");
-            }
-        });
+//        exHeader.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ToastUtil.show("fixed header clicked!");
+//            }
+//        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

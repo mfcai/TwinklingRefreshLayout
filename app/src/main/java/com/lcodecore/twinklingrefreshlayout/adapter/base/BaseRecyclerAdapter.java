@@ -14,7 +14,7 @@ import com.lcodecore.twinklingrefreshlayout.utils.DensityUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-import butterknife.ButterKnife;
+
 /**
  * RecyclerView适配器基类
  */
